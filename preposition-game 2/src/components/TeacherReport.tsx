@@ -4,7 +4,7 @@ import { jsPDF } from 'jspdf';
 import { downloadBlob } from '../lib/download';
 import { Submission } from '../lib/types';
 import { perStudent, errorBreakdown } from '../lib/report';
-import { T, card, btn } from '../lib/theme';
+import { T, btn } from '../lib/theme';
 
 export const TeacherReport: React.FC<{ subs: Submission[]; className: string }> = ({ subs, className }) => {
   const ref = useRef<HTMLDivElement>(null);
