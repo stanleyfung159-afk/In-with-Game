@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #faf8fd;
+}
+textarea, input, select, button { font-family: inherit; }
+
+/* responsive: stack the student feedback/avatar columns and shrink teacher stat grid */
+@media (max-width: 640px) {
+  .pg-cols { grid-template-columns: 1fr !important; }
+  .pg-stats { grid-template-columns: repeat(2, 1fr) !important; }
+}
